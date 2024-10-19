@@ -8,6 +8,13 @@ def encode(password):
         encoded += str((int(i)+3) % 10)
     return encoded
 
+def decode(code):
+    decoded_password = ''
+    for char in code:  # loops through each character in the encoded password
+        decoded_digit = (int(char) - 3) % 10  # shifts characters back by 3
+        decoded_password += str(decoded_digit)
+    return decoded_password  # return final decoded password
+
 #main function
 def main():
     #stored code
@@ -40,8 +47,8 @@ def main():
             continue
 
 
-def decode(code):
-    pass
+
+
 
 #main method
 if __name__ == "__main__":
