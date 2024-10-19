@@ -5,7 +5,7 @@
 def encode(password):
     encoded = ""
     for i in password:
-        encoded += str(int(i)+3 // 10)
+        encoded += str((int(i)+3) % 10)
     return encoded
 
 #main function
@@ -15,10 +15,10 @@ def main():
     while True:
         #print menu
         print("""Menu
-    -------------
-    1. Encode
-    2. Decode
-    3. Quit\n""")
+-------------
+1. Encode
+2. Decode
+3. Quit\n""")
         response = input("Please enter an option: ")
 
         #encoder
