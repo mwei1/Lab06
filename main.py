@@ -1,6 +1,6 @@
 
 
-#encoder by Michael Wei
+#encoder by Michael Wei (I am signed into my Mwei1 Github account yet it is attributing it to dipplydopply, my personal one)
 #adds 3 to every digit in the password
 def encode(password):
     encoded = ""
